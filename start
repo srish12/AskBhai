@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# run jade
+jade src/jade/index.jade --out ./
+
+# run sass
+mkdir gen/css
+scss src/scss/styles.scss gen/css/styles.css
+
+open index.html

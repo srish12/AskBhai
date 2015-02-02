@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+rm gen/css/*.css
+rm index.html

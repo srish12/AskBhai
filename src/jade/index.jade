@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+	head
+		title= "Ask Bhai"
+		// stylesheet
+		link(rel="stylesheet" href="gen/css/styles.css")
+	body
+		.page-container
+			.header
+				h1.page-title= "Ask Bhai !"
+
+			.container
+				.center-col
+					.bg-center
+						input#petition(type="text" placeholder="Enter Petition")
+						input#question(type="text" placeholder="Enter Question")
+				#answer(style="display: none;")
+					#loading
+					#new(style="display: none;") New Question
+					#text
+
+				.footer
+					.pull-right
+						p Copyright &copy; 2015 Samarjeet Singh
+
+		// scripts
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+		// jquery plugins
+		script(src="http://askjud.com/js/jquery.disableTextSelect.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js")
+		// custom javascripts
+		script(src="src/probability.js")
+		script(src="src/script.js")
